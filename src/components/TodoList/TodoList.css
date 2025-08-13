@@ -1,0 +1,135 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 span{
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#input-box {
+  flex: 1;
+  border: 2px solid #65B741;
+  outline: none;
+  background: #f9f9f9;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 30px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#input-box:focus {
+  border-color: #4a8c29;
+  box-shadow: 0 0 5px rgba(101, 183, 65, 0.7);
+  background: #fff;
+}
+
+
+#button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #65B741;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#button:hover {
+  background: #539c32;
+}
+
+#list-container {
+    padding-left: 0;
+}
+
+#list-container li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+#list-container li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+      background-image: url("https://i.pinimg.com/564x/14/8c/66/148c66a7639837d87ead84773d497bc1.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 8px;
+    transition: background-image 0.3s ease;
+}
+
+#list-container li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+#list-container li.checked::before{
+      background-image: url("https://i.pinimg.com/564x/c4/6d/46/c46d46bb7b9ebad98080a2521a232560.jpg");
+
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: red;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 10%;
+    user-select: none;
+  transition: background 0.3s ease;
+}
+
+ul li span:hover {
+  background: #edeef0;
+}

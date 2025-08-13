@@ -1,0 +1,18 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #E9E9E9 !important;
+  font-family: 'DM Serif Text', serif;
+}
+
+#root > div{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E9E9E9 ;
+}
+
+main.container{
+    flex: 1;
+}
