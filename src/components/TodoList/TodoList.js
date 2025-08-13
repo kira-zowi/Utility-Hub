@@ -94,7 +94,7 @@ function TodoList() {
         style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}
       >
         <button
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/Utility-Hub/")}
           style={{
             padding: "10px 20px",
             borderRadius: "30px",

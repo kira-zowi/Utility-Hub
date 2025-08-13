@@ -80,52 +80,52 @@ function Calculator() {
 
   return (
     <div>
-    <div className="calculator">
-      <input
-        type="text"
-        value={display}
-        readOnly
-        className="calculator-display"
-      />
+      <div className="calculator">
+        <input
+          type="text"
+          value={display}
+          readOnly
+          className="calculator-display"
+        />
 
-      <div className="calculator-buttons">
-        <button className="special" onClick={handleClear}>
-          <MdClearAll />
-        </button>
-        <button className="special" onClick={handleDelete}>
-          <FaBackspace />
-        </button>
-        <button onClick={() => handlePercentage()}>%</button>
-        <button onClick={() => handleClick("/")}>÷</button>
+        <div className="calculator-buttons">
+          <button className="special" onClick={handleClear}>
+            <MdClearAll />
+          </button>
+          <button className="special" onClick={handleDelete}>
+            <FaBackspace />
+          </button>
+          <button onClick={() => handlePercentage()}>%</button>
+          <button onClick={() => handleClick("/")}>÷</button>
 
-        <button onClick={() => handleClick("7")}>7</button>
-        <button onClick={() => handleClick("8")}>8</button>
-        <button onClick={() => handleClick("9")}>9</button>
-        <button onClick={() => handleClick("*")}>×</button>
+          <button onClick={() => handleClick("7")}>7</button>
+          <button onClick={() => handleClick("8")}>8</button>
+          <button onClick={() => handleClick("9")}>9</button>
+          <button onClick={() => handleClick("*")}>×</button>
 
-        <button onClick={() => handleClick("4")}>4</button>
-        <button onClick={() => handleClick("5")}>5</button>
-        <button onClick={() => handleClick("6")}>6</button>
-        <button onClick={() => handleClick("-")}>−</button>
+          <button onClick={() => handleClick("4")}>4</button>
+          <button onClick={() => handleClick("5")}>5</button>
+          <button onClick={() => handleClick("6")}>6</button>
+          <button onClick={() => handleClick("-")}>−</button>
 
-        <button onClick={() => handleClick("1")}>1</button>
-        <button onClick={() => handleClick("2")}>2</button>
-        <button onClick={() => handleClick("3")}>3</button>
-        <button onClick={() => handleClick("+")}>+</button>
+          <button onClick={() => handleClick("1")}>1</button>
+          <button onClick={() => handleClick("2")}>2</button>
+          <button onClick={() => handleClick("3")}>3</button>
+          <button onClick={() => handleClick("+")}>+</button>
 
-        <button onClick={() => handleSquareRoot()}>√</button>
-        <button onClick={() => handleClick("0")}>0</button>
-        <button onClick={() => handleClick(".")}>.</button>
-        <button className="equals" onClick={handleCalculate}>
-          =
-        </button>
-      </div>
+          <button onClick={() => handleSquareRoot()}>√</button>
+          <button onClick={() => handleClick("0")}>0</button>
+          <button onClick={() => handleClick(".")}>.</button>
+          <button className="equals" onClick={handleCalculate}>
+            =
+          </button>
+        </div>
       </div>
       <div
         style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}
       >
         <button
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/Utility-Hub/")}
           style={{
             padding: "10px 20px",
             borderRadius: "30px",

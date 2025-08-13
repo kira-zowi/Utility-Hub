@@ -26,7 +26,6 @@ function WeatherApp() {
     Mist: mistImg,
   };
 
-
   async function CheckWeather() {
     if (!city.trim()) return;
 
@@ -111,7 +110,7 @@ function WeatherApp() {
         style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}
       >
         <button
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/Utility-Hub/")}
           style={{
             padding: "10px 20px",
             borderRadius: "30px",
